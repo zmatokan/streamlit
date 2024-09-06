@@ -1,0 +1,8 @@
+services:
+  streamlit:
+    image: my-streamlit-app
+    build:
+      context: https://github.com/zmatokan/streamlit.git
+    ports:
+      - "8501:8501"
+    restart: always
